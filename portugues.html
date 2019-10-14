@@ -1,0 +1,847 @@
+<!--
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="portugues.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    &lt;!&ndash;
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    &ndash;&gt;
+    <title>traducao espanhol ingles web site </title>
+
+    <style>
+
+
+
+
+    </style>
+
+    <script>
+
+        window.addEventListener("load",comenzar,false);
+
+        function comenzar(){
+
+            //var animation =document.getElementById("animation");
+
+            //animation.hide();
+
+            var elemento=document.getElementById("lienzo"); var elemento2=document.getElementById("lienzo2");
+
+
+            var lulu=elemento.getContext("2d"); lulu2=elemento2.getContext("2d");
+
+
+
+
+            lulu.strokeStyle="#0f0f0a"; lulu2.strokeStyle="#0f0f0a";
+
+
+
+
+
+            for(y=0; y<elemento.height; y+=1 ){
+
+                for(x=0; x<elemento.width; x+=24 ){
+
+
+
+
+                    lulu.beginPath();
+                    lulu.arc((6+x),(1+y),4,0,Math.PI*2,false);
+                    lulu.stroke();
+
+                }
+            }
+
+
+            for(y=0; y<elemento2.height; y+=1 ) {
+
+                for (x = 0; x < elemento2.width; x += 24) {
+
+
+                    lulu2.beginPath();
+                    lulu2.arc((6 + x), (1 + y), 4, 0, Math.PI * 2, false);
+                    lulu2.stroke();
+
+                }
+            }
+
+        }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        (document).ready(function () {
+            $("#usa").mouseenter(function () {
+                $(this).css(border="3px solid white");
+
+            });
+        });
+
+
+    </script>
+
+    <script>
+        $(document).ready(function myFunction() {
+
+
+            setInterval(function () {
+
+
+                var miArray = ["Desenho web", "Traduções", "Aplicativos moveis" ];
+
+
+
+
+                $("#animation")
+                    .queue("animation"
+                        , $.map(miArray, function(value) {
+                            return function(next) {
+                                return $("#animation")
+                                    .hide()
+                                    .text(value)
+                                    .fadeIn(2000,
+
+                                        function() {
+                                            $(this).css({
+                                                "background-color": "black"
+                                            })
+                                            /*                                        .animate({
+                                                                                        height: '160px',
+                                                                                        opacity: '0.8'
+                                                                                    }, "slow")*/
+                                                .promise()
+
+
+                                                .then(function() {
+                                                    $(this).fadeOut(2000, next)
+                                                })
+                                        })
+                            }
+                        }))
+                    .dequeue("animation")
+                    .promise("animation")
+                    .then(function() {
+                        console.log("listo")
+                    })
+
+            }, 14000);
+
+
+        });
+
+    </script>
+
+    <script>
+
+        $(document).ready(function(){
+
+
+
+
+            $("#externo").attr("src","Servicos.html" );
+        });
+
+
+        $(document).ready(function(e){
+
+            $("#pulso1").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","Servicos.html" );
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso2").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","tecnologias.html" );
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso3").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","conheca-me.html" );
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso4").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","contato.html" );
+            });
+        });
+
+
+    </script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+<div class="container-fluid" id="encab">
+
+    <div class="row" id="contact" >
+
+        <div class="col-sm-3" id="social_media" >
+
+            <div id="envuelvedireccion">
+
+                <address id="direccion">
+
+
+                    &nbsp;&nbsp;&nbsp;+56978680513<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;andres.diaz@ahdg80.com<br>
+                    &nbsp;&nbsp;&nbsp;Carmen 110, Santiago<br> &nbsp;&nbsp;Chile<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </address>
+
+            </div>
+            &lt;!&ndash;   <image class = "img1"  src= "images/icons8-java-50.png"; id= "soyimagen"/>&ndash;&gt;
+            <canvas style="padding: 1px;" id="lienzo" class="container-fluid">
+
+
+
+                &lt;!&ndash;            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i><label>&nbsp  facebook</label></a><br>
+                            <a href="https://www.facebook.com/"><i class="fab fa-linkedin"></i><label>&nbsp  linkedin</label></a><br>
+                            <a href="https://www.facebook.com/"><i class="fab fa-youtube"></i><label> &nbsp youtube</label></a><br>
+                            <a href="https://www.facebook.com/"><i class="fab fa-twitter-square"></i><label> &nbsp facebook</label></a><br>&ndash;&gt;
+
+            </canvas>
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="col-sm-6" id="marcoanimacion" style="text-align: center" > <div id="animation" style="text-align: center"><p id="wob">Obrigado pela sua visita!</p></div>
+
+        </div>
+
+        <div class="col-sm-3" id="idiomas" >
+
+
+
+
+            <figure id="soyimagen1" >
+                <br><a href="index.html">
+                <img  alt="bandeira" src="images/125px-Flag_of_Spain.png.png" id="espana" ></a><figcaption  id="figcaption1" >&nbsp;&nbsp;&nbsp;Español</figcaption>
+
+
+
+            </figure>
+
+            <figure id="soyimagen2">
+                <br>  <a href="english.html">
+                <img  alt="bandeira" src="images/125px-Flag_of_the_United_States.svg.png" id="usa"></a><figcaption id="figcaption2">&nbsp;&nbsp;&nbsp;English</figcaption>
+
+            </figure>
+
+
+
+            <figure id="soyimagen3">
+                <br> <a href="portugues.html">
+                <img  alt="bandeira" src="images/125px-Flag_of_Brazil.svg.png" id="brasil" ></a><figcaption id="figcaption3">&nbsp;&nbsp;Portugues</figcaption>
+
+            </figure>
+
+
+
+            <canvas style="padding: 1px; z-index:-1" id="lienzo2" class="container-fluid">
+            </canvas>
+        </div>
+
+
+
+
+
+
+    </div>
+
+</div>
+
+<div class="container-fluid" id="nav_photo">
+
+    <div class="row" id="nav-photo2">
+
+        <div class="col-sm-3" id="navigation_drawings">
+
+            <div class="row">
+
+                <div class="col-sm-12" id="navigation">
+
+                    <ul>
+                        <li><a href="" id="pulso1"><h4 style="color:#00008B;">Serviços</h4></a></li>
+                        <li><a href="" id="pulso2"><h4 style="color:#00008B;">Tecnologias</h4></a></li>
+                        <li><a href="" id="pulso3"><h4 style="color:#00008B;">Conheça-me</h4></a></li>
+                        <li><a href="" id="pulso4"><h4 style="color:#00008B;">Contatar</h4></a></li>
+                    </ul>
+
+                </div> &lt;!&ndash;cierre navigation&ndash;&gt;
+
+            </div> &lt;!&ndash;cierre row&ndash;&gt;
+
+
+            <div class="row">
+
+                <div class="col-sm-12" id="drawing">
+
+                    <img src="images/icons8-javascript-50.png" width="50" height="50"><br>
+                    <img src="images/icons8-html-5-50.png"><br>
+                    <img src="images/icons8-css3-50.png"><br>
+                    <img src="images/icons8-bootstrap-50.png"><br>
+                    <img src="images/icons8-android-os-50.png"><br>
+                    <img src="images/icons8-java-50.png"><br>
+                    <img src="images/icons8-nodejs-50.png"><br>
+                    <img src="images/reactjsicon.png"><br>
+
+
+                    &lt;!&ndash;  <i class="fab fa-js-square" style="width: 90%; heigth:90%"></i>
+                      <i class="fab fa-html5"></i>
+                      <i class="fab fa-css3-alt"></i>&ndash;&gt;
+
+                </div> &lt;!&ndash;cierre drawing&ndash;&gt;
+
+            </div> &lt;!&ndash;cierre row&ndash;&gt;
+
+        </div>
+
+        <div class="col-sm-9" id="frame">
+
+            <div class="mainContent">  <iframe src="" id="externo" class="embed-responsive-item" height="500" width="100%" style="margin-top: 12px"></iframe></div>
+
+            <div class="col-12" id="cierre"><h4>Siga-me nas redes sociais</h4>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="https://www.facebook.com/andres.h.gonzalez.94" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/YOURSTEPFATHER" class="fa fa-twitter"></a>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="d_es.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+    <title>Freelance paginas web español ingles portugues; spanish english portuguese websites; espanhol ingles português sites</title>
+
+    <style>
+
+
+
+
+    </style>
+
+    <script>
+
+        window.addEventListener("load",comenzar,false);
+
+        function comenzar(){
+
+
+            var elemento=document.getElementById("lienzo"); var elemento2=document.getElementById("lienzo2");
+
+
+            var lulu=elemento.getContext("2d"); lulu2=elemento2.getContext("2d");
+
+
+            lulu.strokeStyle="#0f0f0a"; lulu2.strokeStyle="#0f0f0a";
+
+
+            for(y=0; y<elemento.height; y+=1 ){
+
+                for(x=0; x<elemento.width; x+=24 ){
+
+
+                    lulu.beginPath();
+                    lulu.arc((6+x),(1+y),4,0,Math.PI*2,false);
+                    lulu.stroke();
+
+                }
+            }
+
+
+            for(y=0; y<elemento2.height; y+=1 ) {
+
+                for (x = 0; x < elemento2.width; x += 24) {
+
+
+                    lulu2.beginPath();
+                    lulu2.arc((6 + x), (1 + y), 4, 0, Math.PI * 2, false);
+                    lulu2.stroke();
+
+                }
+            }
+        }
+
+    </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function myFunction() {
+
+
+            setInterval(function () {
+
+
+                var miArray = ["Desenho web", "Traduções", "Aplicativos" ];
+
+
+
+
+                $("#animation")
+                    .queue("animation"
+                        , $.map(miArray, function(value) {
+                            return function(next) {
+                                return $("#animation")
+                                    .hide()
+                                    .text(value)
+                                    .fadeIn(2000,
+
+                                        function() {
+                                            $(this).css({
+                                                "background-color": "black"
+                                            })
+                                                .promise()
+                                                .then(function() {
+                                                    $(this).fadeOut(2000, next)
+                                                })
+                                        })
+                            }
+                        }))
+                    .dequeue("animation")
+                    .promise("animation")
+                    .then(function() {
+                        console.log("listo")
+                    })
+
+            }, 14000);
+        });
+
+    </script>
+
+
+
+    <script>
+
+        function miScroll () {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#externo").offset().top
+            }, 900);
+        }
+
+        $(document).ready(function(){
+
+            $("#externo").attr("src","Video.html" );
+        });
+
+
+        $(document).ready(function(e){
+
+            $("#pulso21").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","Servicos.html" );
+
+                miScroll();
+
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso22").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","tecnologiaspt.html" );
+
+                miScroll();
+            });
+        });
+
+
+        $(document).ready(function(e){
+
+            $("#pulso23").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","referências.html" );
+
+                miScroll();
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso24").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","contato.html" );
+
+                miScroll();
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso25").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","projetos.html" );
+
+                miScroll();
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso26").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","video.html" );
+
+                miScroll();
+            });
+        });
+
+    </script>
+
+
+
+
+
+
+
+    <script>
+
+        $(document).ready(function(){
+
+            $("#externo").attr("src","Video.html" );
+        });
+
+
+        $(document).ready(function(e){
+
+            $("#pulso1").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","Servicos.html" );
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso2").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","tecnologiaspt.html" );
+            });
+        });
+
+
+        $(document).ready(function(e){
+
+            $("#pulso3").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","referências.html" );
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso4").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","contato.html" );
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso5").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","projetos.html" );
+            });
+        });
+
+        $(document).ready(function(e){
+
+            $("#pulso6").click(function(e){
+
+                e.preventDefault();
+
+                $("#externo").attr("src","video.html" );
+            });
+        });
+
+    </script>
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+<div class="container-fluid " id="encab">
+
+    <div class="row" id="contact" >
+
+
+        <div class="col-sm-3" id="social_media" >
+            <div id="envuelvedireccion">
+
+                <address id="direccion">
+
+                    telefone: +56978680513<br>
+                    email: andres.diaz@ad80.com<br>
+                    cnpj: 76.335.095-9<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endereço: Carmen 110 Santiago, Chile</address>
+            </div>
+
+            <canvas style="padding: 1px;" id="lienzo" class="container-fluid">
+            </canvas>
+
+        </div>
+
+
+        <div class="col-sm-6" id="marcoanimacion" style="text-align: center" >
+            <div id="animation" style="text-align: center">
+                <div id="pruebita" class="animated zoomIn slow delay-1s">
+                    <img src="images/d23.png" alt="lala" id="alarmbanderas" >
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-3" id="social_media2" >
+
+            <div id="envuelvedireccion2">
+
+                <address id="direccion2">
+
+                    telefone: +56978680513<br>
+                    email: andres.diaz@ad80.com<br>
+                    cnpj: 76.335.095-9<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endereço: Carmen 110 Santiago, Chile</address>
+
+            </div>
+
+            <canvas style="padding: 1px; z-index:-1" id="lienzo2" class="container-fluid">
+            </canvas>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<div class="container-fluid" id="nav_photo">
+
+    <div class="row" id="nav-photo2">
+
+        <div class="col-sm-3" id="navigation_drawings">
+
+
+            <div class="row">
+
+                <div class="col-4">
+                    <br> <a href="index.html">
+                    <img  alt="image" src="images/125px-Flag_of_Spain.png.png" id="espana" class="animated bounce delay-5s"><p id="españolp" class="animated bounceInLeft delay-4s">Español</p></a>
+                </div>
+
+                <div class="col-4">
+                    <br>  <a href="english.html">
+                    <img  alt="image" src="images/125px-Flag_of_the_United_States.svg.png" id="usa" class="animated bounce delay-5s"><p id="inglesp"  class="animated bounceInLeft delay-4s">English</p></a>
+                </div>
+
+
+
+                <div class="col-4">
+                    <br> <a href="portugues.html">
+                    <img  alt="image" src="images/125px-Flag_of_Brazil.svg.png" id="brasil" class="animated bounce delay-5s" ><p id="portuguesp" class="animated bounceInLeft delay-4s">Português</p ></a>
+                </div>
+
+            </div>
+
+
+            <div class="col-12" id="navigation">
+
+                <ul>
+                    <li><a href="" id="pulso6"><p style="color:#00008B;">Apresentação<p/></a></li>
+                    <li><a href="" id="pulso1"><p style="color:#00008B;">Serviços</p></a></li>
+                    <li><a href="" id="pulso2" ><p style="color:#00008B;">Tecnologias<p/></a></li>
+                    <li><a href="" id="pulso5"><p style="color:#00008B;">Projetos<p/></a></li>
+                    <li><a href="" id="pulso3"><p style="color:#00008B;">Referências<p/></a></li>
+                    <li><a href="" id="pulso4"><p style="color:#00008B;">Contato<p/></a></li>
+
+                </ul>
+
+            </div> <!--cierre navigation-->
+
+
+            <div class="col-12" id="navigation2">
+
+                <ul>
+                    <li><a href="" id="pulso26"><p style="color:#00008B;">Apresentação<p/></a></li>
+                    <li><a href="" id="pulso21" onclick="scrollWin(0, 900)"><p style="color:#00008B;">Serviços</p></a></li>
+                    <li><a href="" id="pulso22"  onclick="scrollWin(0, 900)"><p style="color:#00008B;">Tecnologias<p/></a></li>
+                    <li><a href="" id="pulso25" onclick="scrollWin(0, 900)"><p style="color:#00008B;">Projetos<p/></a></li>
+                    <li><a href="" id="pulso23" onclick="scrollWin(0, 900)"><p style="color:#00008B;">Referências<p/></a></li>
+                    <li><a href="" id="pulso24" onclick="scrollWin(0, 900)"><p style="color:#00008B;">Contato<p/></a></li>
+
+
+                </ul>
+
+            </div> <!--cierre navigation-->
+
+
+
+            <div class="row">
+
+                <div class="col-sm-12" id="drawing">
+
+                    <img src="images/icons8-javascript-50.png" width="50" height="50"><br>
+                    <img src="images/icons8-bootstrap-50.png"><br>
+                    <img src="images/icons8-android-os-50.png"><br>
+                    <img src="images/icons8-java-50.png"><br>
+                    <img src="images/icons8-nodejs-50.png"><br>
+                    <img src="images/reactjsicon.png"><br>
+                    <img src="images/icons8-php-50.png"><br>
+                    <img src="images/icons8-laravel-50.png"><br><br>
+
+
+
+
+
+
+                </div> <!--cierre drawing-->
+
+            </div> <!--cierre row-->
+
+        </div> <!--cierre row-->
+
+
+
+        <div class="col-sm-9" id="frame">
+
+            <div class="mainContent">
+
+                <iframe src="" id="externo" class="embed-responsive-item" height="900" width="100%" style="margin-top: 12px;  overflow-x:hidden" frameborder="0"></iframe></div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="row"  id="cierre">
+
+        <div class="col-3    text-center"><img src="images/d23.png">
+        </div>
+
+
+
+        <div class="col-9   text-right pt-4 pr-lg-3">
+            <a href="https://www.linkedin.com/in/andres-diaz-16ab63186/" class="fa fa-linkedin"></a>
+            <a href="https://www.facebook.com/andres.h.gonzalez.94" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <h4>Siga-me nas redes sociais...</h4>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+</body>
+</html>
